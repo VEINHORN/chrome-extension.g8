@@ -12,7 +12,7 @@ It will ask you several questions (name, package and which version of Scala.js b
 
 ### Scala.js bindings for Chrome
 
-If you prefer to use SBT 1.1.0 and the latest Scala.js version you can set `scalajs_chrome_050` option to `no`, or just set it to `yes` and use current stable version of [scala-js-chrome](https://github.com/lucidd/scala-js-chrome) bindings.
+If you prefer to use SBT 1.1.0 and the latest Scala.js version you can set `scalajs_chrome_050` option to `no` (it will use modified for SBT 1.1.0 version of [scala-js-chrome](https://github.com/lucidd/scala-js-chrome) bindings from [sbt-1.1.0](https://github.com/VEINHORN/scala-js-chrome/tree/sbt-1.1.0) branch), or just set it to `yes` and use current stable version of [scala-js-chrome](https://github.com/lucidd/scala-js-chrome) bindings.
 
 Template license
 ----------------
