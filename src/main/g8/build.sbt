@@ -8,7 +8,11 @@ lazy val root = (project in file("."))
   .settings(
     inThisBuild(List(
       organization := "com.example",
+      $if(scalajs_chrome_050.truthy)$
       scalaVersion := "2.12.2"
+      $else$
+      scalaVersion := "2.12.4"
+      $endif$
     )),
     name := "$name$",
     version := "0.1",
@@ -19,7 +23,11 @@ lazy val root = (project in file("."))
     skip in packageJSDependencies := false,
 
     libraryDependencies ++= Seq(
+      $if(scalajs_chrome_050.truthy)$
       "net.lullabyte" %%% "scala-js-chrome" % "0.5.0"
+      $else$
+      "net.lullabyte" %%% "scala-js-chrome" % "0.5.8"
+      $endif$
     ),
     chromeManifest := new ExtensionManifest {
       override val name = Keys.name.value
