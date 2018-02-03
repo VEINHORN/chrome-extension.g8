@@ -5,8 +5,11 @@ A [Giter8][g8] template for a Chrome extension powered by Scala.js.
 If you have SBT version 0.13.13 or later, you can simply run:
 
 ```
-sbt new VEINHORN/chrome-extension.g8
+g8 VEINHORN/chrome-extension.g8
 ```
+
+> Attention:
+> SBT `new` command doesn't support conditions in Giter8 templates, that's why you should use Giter8 command line tool for grabbing this template.
 
 It will ask you several questions (name, package and which version of Scala.js bindings for Chrome to use) and then create a new directory.
 
